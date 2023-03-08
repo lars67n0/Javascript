@@ -36,21 +36,20 @@
    
 
       <table class="table" 
-      style="border-collapse: collapse;
+      style="
       width: 100%;
       max-width: 800px;
       margin: 0 auto;
       margin-top: 5%;
-      background-color: #f9f9f9;
+      background-color: white;
       font-size: 16px;
       font-family: Arial, sans-serif;
-      text-align: center;">
+      text-align: center;
+      ">
         <thead >
           <tr>
           <th style="background-color:#084298 ; color:white; font-weight: bold;"> Entered Text</th>
-          <th style="background-color:#084298 ; color:white; font-weight: bold;">First Letter Caps</th>
-          <th style="background-color:#084298 ; color:white; font-weight: bold;" >Last Letter Caps</th>
-          <th style="background-color:#084298 ; color:white; font-weight: bold;">All Letters Caps</th>
+          
           <th style="background-color:#084298 ; color:white; font-weight: bold;">Backwards</th>
           </tr>
         </thead>
@@ -58,10 +57,7 @@
           <tr v-for="(text, index) in transformedTexts" :key="index">
           
             <td>{{ text }}</td>
-            <td>{{ text.charAt(0).toUpperCase() + text.slice(1) }}</td>
             
-            <td>{{ text.slice(0, -1) + text.charAt(text.length -1).toUpperCase() }}</td>
-            <td>{{ text.toUpperCase() }}</td>
             <td>{{ text.split('').reverse().join('') }}</td>
 
           </tr>
