@@ -6,36 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- table
- {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  text-align: cetner;
- }
-
- th, td {
-  padding:10px;
-  border: 1px solid #ddd;
- }
-
- th {
-  background-color:#084298 ; color:white; font-weight: bold;
-
- }
-
- tr:nth-child(even)
- {
-  background-color: #f2f2f2;
- }
-
- tr:hover{
-  background:#ddd;
- }
+ 
 
 :root {
   --bs-blue: #0d6efd;
